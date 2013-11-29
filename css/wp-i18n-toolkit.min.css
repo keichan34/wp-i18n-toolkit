@@ -1,0 +1,4 @@
+@charset "UTF-8";/*!
+ * WordPress i18n toolkit
+ * v0.1
+ */.i18n-tk-string{text-decoration:underline;color:purple}.i18n-tk-string:before{content:'★'}#i18n-tk-popover{position:absolute;border:1px solid #000;background:rgba(255,255,255,.9);top:0;left:0;width:300px;height:0;visibility:hidden;overflow:hidden;z-index:50000000;-webkit-transition:height .5s,visibility .5s;-moz-transition:height .5s,visibility .5s;-ms-transition:height .5s,visibility .5s;transition:height .5s,visibility .5s}#i18n-tk-popover.shown{visibility:visible;height:500px;-webkit-transition:height .5s,visibility 0s;-moz-transition:height .5s,visibility 0s;-ms-transition:height .5s,visibility 0s;transition:height .5s,visibility 0s}

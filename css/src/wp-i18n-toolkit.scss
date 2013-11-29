@@ -1,0 +1,47 @@
+/*!
+ * WordPress i18n toolkit
+ * v0.1
+ */
+
+.i18n-tk-string {
+  text-decoration: underline;
+  color: purple;
+
+  &:before {
+    content: '★';
+  }
+}
+
+#i18n-tk-popover {
+  position: absolute;
+  border: 1px solid black;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 0px;
+
+  visibility: hidden;
+  overflow: hidden;
+
+  z-index: 50000000;
+
+  $trans_time: 0.5s;
+
+  -webkit-transition: height $trans_time, visibility $trans_time;
+  -moz-transition: height $trans_time, visibility $trans_time;
+  -ms-transition: height $trans_time, visibility $trans_time;
+  transition: height $trans_time, visibility $trans_time;
+
+  &.shown {
+    visibility: visible;
+    height: 500px;
+
+    -webkit-transition: height $trans_time, visibility 0s;
+    -moz-transition: height $trans_time, visibility 0s;
+    -ms-transition: height $trans_time, visibility 0s;
+    transition: height $trans_time, visibility 0s;
+  }
+}
